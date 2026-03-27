@@ -64,8 +64,7 @@ board1([X|SX], Y) :- p([X,Y], H), write(H), write(' | '), board1(SX, Y).
 
 th(S) :- p(S,' '), retract(p(S,' ')), assert(p(S, o)), vypis_pole.
 
-tp :- p(S,' '), retract(p(S,' ')), assert(p(S, x)), vypis_pole, nl, write(S).¨
-#a
+tp :- p(S,' '), retract(p(S,' ')), assert(p(S, x)), vypis_pole, nl, write(S).
 
  
 
